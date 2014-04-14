@@ -104,7 +104,7 @@ hr {
 }
 
 .color-text {
-    color: #5CB495;
+    color: #4897BD;
     font-weight: bold;
 }
 
@@ -303,8 +303,8 @@ h3.spec {
 	width: 100%;
 	height: 100%;
 	background: #26292E;
-	opacity: 0.5;
-	filter: alpha(opacity=50);
+	opacity: 0;
+	filter: alpha(opacity=0);
 	z-index: 0;
 }
 
@@ -340,7 +340,7 @@ h3.spec {
 #home-slider .control-nav {
 	position: absolute;
 	width: 100%;
-	background: #2F3238;
+	background: #FFFFFF;
 	height: 50px;
 	bottom: 0;
 	z-index: 2;
@@ -349,7 +349,7 @@ h3.spec {
 #home-slider #nextslide,
 #home-slider #prevslide {
 	background-image: none;
-	background-color: #26292E;
+	background-color: #45A093;
 	display: inline-block;
 	margin: 0;
 	position: relative;
@@ -439,7 +439,7 @@ h3.spec {
 }
 
 #home-slider #nextsection {
-	background-color: #26292E;
+	background-color: #45A093;
 	margin: 0;
 	position: relative;
 	float:right;
@@ -483,8 +483,8 @@ header {
 header .sticky-nav {
 	position: relative;
 	width: 100%;
-	height: 60px;
-	background: #26292E;
+	height: 70px;
+	background: #FFFFFF;
 	z-index: 1001;
 	
 	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
@@ -547,7 +547,7 @@ nav#menu #menu-nav li:first-child {
 }
 
 nav#menu #menu-nav li a {
-	color: #FFFFFF;
+	color: #263944;
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 60px;
@@ -632,17 +632,21 @@ nav#menu #menu-nav li a:hover {
 ================================================== */
 
 .page {
-	background: #2F3238;
+	background: #263944;
 	padding: 100px 0;
 	position: relative;
 	z-index: 99;
 }
 
 .page-alternate {
-	background: #26292E;
+	background: #ABB3B8;
 	padding: 100px 0;
 	position: relative;
 	z-index: 99;
+}
+
+.page-alternate h2{
+	color: #4897BD;
 }
 
 .title-page {
@@ -787,6 +791,7 @@ nav#menu #menu-nav li a:hover {
 .profile-description {
 	margin-bottom: 25px;
 	text-align : justify;
+	color: #263944;
 }
 
 .image-wrap {
