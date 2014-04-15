@@ -124,7 +124,8 @@ BRUSHED.filter = function (){
 			  // options
 			  animationEngine: 'best-available',
 			  itemSelector : '.item-thumbs',
-			  layoutMode : 'fitRows'
+			  layoutMode : 'fitRows',
+			  filter : '.mineria'
 			});
 		});
 	
@@ -157,7 +158,6 @@ BRUSHED.filter = function (){
 			  // otherwise, apply new options
 			  $container.isotope( options );
 			}
-			
 			return false;
 		});
 	}

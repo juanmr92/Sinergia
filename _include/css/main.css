@@ -296,6 +296,9 @@ h3.spec {
 	position: relative;
 	overflow: hidden;
 	height: 91%;
+	border-right: 10px solid;
+	border-left: 10px solid;
+	border-color: white;
 }
 
 #home-slider .overlay { 
@@ -647,6 +650,10 @@ nav#menu #menu-nav li a:hover {
 
 .page-alternate h2{
 	color: #4897BD;
+}
+
+.page-alternate h3{
+	color: #222425;
 }
 
 .title-page {
