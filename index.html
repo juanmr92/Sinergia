@@ -65,6 +65,52 @@
 <!-- Modernizr -->
 <script src="_include/js/modernizr.js"></script>
 
+<!-- Google Maps-->
+<script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCjNRGHsfqX9MQm_PSLdMkrAavnvTMpjKU&sensor=false">
+</script>
+<script type="text/javascript">
+        /*function initialize() {
+            var mapOptions = {
+              center: new google.maps.LatLng(-34.397, 150.644),
+              zoom: 8,
+              mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("map_canvas"),
+                mapOptions);
+            google.maps.event.trigger(map, 'resize');
+        }*/
+        function initialize() {
+            var myLatlng = new google.maps.LatLng(-12.079943,-77.005454);
+            var mapOptions = {
+                   zoom: 14,
+                   center: new google.maps.LatLng(-12.078157,-77.005738),  
+                   mapTypeId: google.maps.MapTypeId.ROADMAP
+               };
+         
+            var map = new google.maps.Map(document.getElementById('map_canvas'),
+                                           mapOptions);
+                                      
+           var marker = new google.maps.Marker({
+                           map: map,
+                           draggable: false,
+                           title: 'Sinergia',
+                           position: myLatlng
+            });
+
+            var infowindow = new google.maps.InfoWindow();
+            var contentString = "<b>Sinergia Publicaciones</b><br />";
+            contentString += "####################<br /> ############# <br /> #################";
+
+            infowindow.setContent(contentString);
+            //infowindow.setPosition(myLatlng);
+            infowindow.open(map,marker);
+        } 
+
+        google.maps.event.addDomListener(window, 'resize', initialize);
+        google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
 <!-- Analytics -->
 <script type="text/javascript">
 
@@ -84,8 +130,7 @@
 </head>
 
 
-<body>
-
+<body onload="initialize()">
 <!-- Header -->
 <header>
     <div class="sticky-nav">
@@ -638,7 +683,6 @@
 </div>
 <!-- End About Section -->
 
-
 <!-- Contact Section -->
 <div id="contact" class="page">
 <div class="container">
@@ -655,7 +699,7 @@
     
     <!-- Contact Form -->
     <div class="row">
-    	<div class="span9">
+    	<div class="span6">
         
         	<form id="contact-form" class="contact-form" action="">
             	<p class="contact-name">
@@ -680,18 +724,21 @@
             </form>
          
         </div>
-        
-        <div class="span3">
+        <div class="span6">
         	<div class="contact-details">
                 <ul>
-                    <li><a href="#">hello@brushed.com</a></li>
-                    <li>(916) 375-2525</li>
-                    <li>
-                        Brushed Studio
+                    <li><!-- <a href="http://goo.gl/maps/xrsh3" class="map-responsive">
+                            <img src="http://maps.googleapis.com/maps/api/staticmap?size=600x380&markers=color:green|label:S|-12.0797243,-77.00582561&sensor=false" alt="Ubicación Sinergia">
+                        </a>-->
+                        <div id="map_canvas" style="width:100%; height:350px;"></div>
+                    </li>
+                    <li><a href="#">sinergia@sinergia.com</a>
                         <br>
-                        5240 Vanish Island. 105
+                        999999999
                         <br>
-                        Unknow
+                        Sinergia Publicaciones
+                        <br>
+                        Lima
                     </li>
                 </ul>
             </div>

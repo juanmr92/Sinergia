@@ -16,6 +16,10 @@ html, body {
 	height: 100%;
 }
 
+#map_canvas { 
+	height: 100%;
+}
+
 html, hmtl a{
 	width:100%;
 	font-size: 100%; 
@@ -930,6 +934,17 @@ nav#menu #menu-nav li a:hover {
 	margin: 0 0 20px;
 	line-height: 28px;
 	padding: 0;	
+}
+
+.map-responsive {
+	display: block;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	
+	line-height: 0;
+}
+.map-responsive img {
+	max-width: 100%;
 }
 
 #contact-form {

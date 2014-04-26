@@ -404,12 +404,10 @@ BRUSHED.toolTip = function(){
     $('a[data-toggle=tooltip]').tooltip();
 }
 
-
 /* ==================================================
 	Init
 ================================================== */
-
-BRUSHED.slider();
+BRUSHED.slider()
 
 $(document).ready(function(){
 	Modernizr.load([
@@ -439,7 +437,7 @@ $(document).ready(function(){
 			$('#circle').delay(250).animate({'opacity' : 1}, 500, 'linear');
 		}
 	});
-	
+
 	BRUSHED.nav();
 	BRUSHED.mobileNav();
 	BRUSHED.listenerMenu();

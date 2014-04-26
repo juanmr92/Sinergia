@@ -44,6 +44,10 @@
 	.info-text {
 		padding-right: 0;	
 	}
+
+	/*.map-responsive{
+		max-width: 400px;
+	}*/
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
@@ -205,6 +209,9 @@
 	.info-text {
 		padding-right: 0;	
 	}
+	/*.map-responsive{
+		max-width: 700px;
+	}*/
 }
 
 @media (max-width: 480px) {
@@ -379,6 +386,10 @@
 	.info-text {
 		padding-right: 0;	
 	}
+
+	/*.map-responsive{
+		max-width: 450px;
+	}*/
 }
 
 @media (max-width: 320px) {
@@ -401,6 +412,9 @@
 		padding-top: 90px;
 		padding-bottom: 120px;	
 	}
+	/*.map-responsive{
+		max-width: 320px;
+	}*/
 }
 
 
@@ -425,6 +439,10 @@
 		.type-work {
 			background-image: url(../img/filter-icon_@2x.png);
 			background-size: 16px 16px;
+		}
+
+		.map-responsive {
+		background-size: 640px 640px;
 		}
 	}
 
