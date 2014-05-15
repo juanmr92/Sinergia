@@ -300,8 +300,8 @@ h3.spec {
 	position: relative;
 	overflow: hidden;
 	height: 88%;
-	border-right: 50px solid;
-	border-left: 50px solid;
+	border-right: 100px solid;
+	border-left: 100px solid;
 	border-color: white;
 }
 
@@ -510,7 +510,7 @@ header #logo {
 	color: #FFFFFF;
 	float: left;
 	padding: 15px 0;
-	margin-left: 20px;
+	margin-left: 100px;
 }
 
 header #logo a {

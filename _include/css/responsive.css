@@ -2,6 +2,12 @@
 	#menu {
 		display: none;	
 	}
+
+	#home-slider {		
+		border-right: 50px solid;
+		border-left: 50px solid;
+		border-color: white;
+	}
 	
 	#mobile-nav {
     	display: block;
@@ -57,7 +63,10 @@
 	
 	#home-slider {
 		margin-left: -20px;
-		margin-right: -20px;
+		margin-right: -20px;				
+		border-right: 10px solid;
+		border-left: 10px solid;
+		border-color: white;
 	}
 	#home-slider .slide-title {
 	font-size: 30px;
@@ -221,7 +230,9 @@
 	
 	#home-slider {
 		margin-left: -20px;
-		margin-right: -20px;
+		margin-right: -20px;		
+		border-right: 0px solid;
+		border-left: 0px solid;
 	}
 	#home-slider ul#slide-list {
 		display: none;	

@@ -92,11 +92,25 @@ BRUSHED.slider = function(){
 		mouse_scrub				:	0
 		
 	});
-	$(".about-us").nerveSlider({
+	$(".about-us1").nerveSlider({
 		slideTransitionSpeed: 1000,
 		sliderResizable:true,
 		sliderHeightAdaptable: true,
 		slideTransition : "fade"
+	});
+	$(".about-us2").nerveSlider({
+		slideTransitionSpeed: 1000,
+		sliderResizable:true,
+		sliderHeightAdaptable: true,
+		slideTransition : "fade",
+		preDelay : 1000
+	});
+	$(".about-us3").nerveSlider({
+		slideTransitionSpeed: 1000,
+		sliderResizable:true,
+		sliderHeightAdaptable: true,
+		slideTransition : "fade",
+		preDelay : 1500
 	});
 
 }
