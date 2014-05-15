@@ -189,7 +189,8 @@ BRUSHED.fancyBox = function(){
 				padding : 0,
 				beforeShow: function () {
 					this.title = $(this.element).attr('title');
-					this.title = '<h4>' + this.title + '</h4>' + '<p>' + $(this.element).parent().find('img').attr('alt') + '</p>';
+					this.title = '<h4>' + this.title + '</h4>' + '<a class="button button-mini" href="#">Publicación completa</a>'
+								 + '<p>' + $(this.element).parent().find('img').attr('alt') + '</p>';
 				},
 				helpers : {
 					title : { type: 'inside' },
@@ -197,6 +198,30 @@ BRUSHED.fancyBox = function(){
 			});
 			
 		$('.fancybox-media').fancybox({
+			openEffect  : 'none',
+			closeEffect : 'none',
+			helpers : {
+				media : {}
+			}
+		});
+	}
+
+	if($('.fancybox2').length > 0 || $('.fancybox-media2').length > 0 || $('.fancybox-various2').length > 0){
+		
+		$(".fancybox2").fancybox({				
+				padding : 0,
+				beforeShow: function () {
+					this.title = $(this.element).attr('title');
+					this.title = '<h4>' + this.title + '</h4>' + '<a class="button button-mini" href="#">Pub.El Comercio</a>'+
+								 '<a class="button button-mini pull-right" href="#">  Pub. Gestión  </a>'
+								 + '<p>' + $(this.element).parent().find('img').attr('alt') + '</p>';
+				},
+				helpers : {
+					title : { type: 'inside' },
+				}
+			});
+			
+		$('.fancybox-media2').fancybox({
 			openEffect  : 'none',
 			closeEffect : 'none',
 			helpers : {

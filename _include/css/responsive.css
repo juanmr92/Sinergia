@@ -20,9 +20,13 @@
 	
 	header .sticky-nav #mobile-nav,
 	header .sticky-nav.stuck #mobile-nav {
-		margin-right: 20px;	
+		margin-right: 60px;	
 	}
 	
+	header #logo {
+		margin-left: 50px;
+	}
+
 	#social-area #social ul li {
 		margin-left: 15px;
 	}
@@ -96,6 +100,10 @@
 	
 	header .sticky-nav.stuck #logo {
 		margin-left: 20px;	
+	}
+
+	header #logo {
+		margin-left: 10px;
 	}
 	
 	header .sticky-nav #menu {

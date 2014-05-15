@@ -535,7 +535,7 @@ header #logo a:hover {
 
 nav#menu {
 	float: right;
-	margin-right: 20px;
+	margin-right: 100px;
 	margin-top: 15px;
 }
 
@@ -547,7 +547,7 @@ nav#menu #menu-nav {
 nav#menu #menu-nav li {
 	list-style: none;
 	display: inline-block;
-	margin-left: 50px;	
+	margin-left: 30px;	
 }
 
 nav#menu #menu-nav li:first-child {
@@ -582,7 +582,7 @@ nav#menu #menu-nav li a:hover {
 	width: 16px;
 	height: 16px;
 	display: block;
-	margin: 22px 0 0 0;
+	margin: 35px 0 0 0;
 	
 	-webkit-transform: rotate(0deg);
 	   -moz-transform: rotate(0deg);
