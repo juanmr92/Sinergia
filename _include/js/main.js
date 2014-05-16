@@ -190,8 +190,8 @@ BRUSHED.fancyBox = function(){
 				beforeShow: function () {
 					this.title = $(this.element).attr('title');
 					this.title = '<h4>' + this.title + '</h4>' 
-								 + '<p>' + $(this.element).parent().find('img').attr('alt') + '</p>' +
-								 '<a class="button button-mini" href="#">PUBLICACIÓN COMPLETA</a>';
+								 +'<p>' + $(this.element).parent().find('img').attr('alt') + '</p>' +
+								 '<a class="button button-mini" href="_include/flipbook/'+$(this.element).attr('id')+'" target="_blank">PUBLICACIÓN COMPLETA</a>';
 				},
 				helpers : {
 					title : { type: 'inside' },
@@ -446,9 +446,43 @@ BRUSHED.toolTip = function(){
 }
 
 /* ==================================================
+   Maps
+================================================== */
+
+BRUSHED.map = function(){ 
+	var myLatlng = new google.maps.LatLng(-12.079943,-77.005454);
+    var mapOptions = {
+           zoom: 14,
+           center: new google.maps.LatLng(-12.078157,-77.005738),  
+           mapTypeId: google.maps.MapTypeId.ROADMAP
+       };
+ 
+    var map = new google.maps.Map(document.getElementById('map_canvas'),
+                                   mapOptions);
+                              
+    var marker = new google.maps.Marker({
+                   map: map,
+                   draggable: false,
+                   title: 'Sinergia',
+                   position: myLatlng
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+    var contentString = "<b>Sinergia Publicaciones</b><br />";
+    contentString += "####################<br /> ############# <br /> #################";
+
+    infowindow.setContent(contentString);
+    //infowindow.setPosition(myLatlng);
+    infowindow.open(map,marker);
+}
+
+/* ==================================================
 	Init
 ================================================== */
-BRUSHED.slider()
+BRUSHED.slider();
+BRUSHED.map();
+google.maps.event.addDomListener(window, 'resize', BRUSHED.map);
+google.maps.event.addDomListener(window, 'load', BRUSHED.map);
 
 $(document).ready(function(){
 	Modernizr.load([
