@@ -189,8 +189,9 @@ BRUSHED.fancyBox = function(){
 				padding : 0,
 				beforeShow: function () {
 					this.title = $(this.element).attr('title');
-					this.title = '<h4>' + this.title + '</h4>' + '<a class="button button-mini" href="#">Publicación completa</a>'
-								 + '<p>' + $(this.element).parent().find('img').attr('alt') + '</p>';
+					this.title = '<h4>' + this.title + '</h4>' 
+								 + '<p>' + $(this.element).parent().find('img').attr('alt') + '</p>' +
+								 '<a class="button button-mini" href="#">PUBLICACIÓN COMPLETA</a>';
 				},
 				helpers : {
 					title : { type: 'inside' },
@@ -212,9 +213,10 @@ BRUSHED.fancyBox = function(){
 				padding : 0,
 				beforeShow: function () {
 					this.title = $(this.element).attr('title');
-					this.title = '<h4>' + this.title + '</h4>' + '<a class="button button-mini" href="#">Pub.El Comercio</a>'+
-								 '<a class="button button-mini pull-right" href="#">  Pub. Gestión  </a>'
-								 + '<p>' + $(this.element).parent().find('img').attr('alt') + '</p>';
+					this.title = '<h4>' + this.title + '</h4>' 
+								 + '<p>' + $(this.element).parent().find('img').attr('alt') + 
+								 '</p><a class="button button-mini" href="#">EL COMERCIO</a>'+
+								 '<a class="button button-mini pull-right" href="#">GESTIÓN  </a>';
 				},
 				helpers : {
 					title : { type: 'inside' },
