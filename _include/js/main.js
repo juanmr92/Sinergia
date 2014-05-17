@@ -112,6 +112,13 @@ BRUSHED.slider = function(){
 		slideTransition : "fade",
 		preDelay : 1500
 	});
+	$(".prensa-image").nerveSlider({
+		sliderResizable:true,
+		sliderHeightAdaptable: true,
+		slideTransition : "fade",
+		showDots : false,
+		showArrows : false
+	});
 
 }
 
@@ -191,7 +198,7 @@ BRUSHED.fancyBox = function(){
 					this.title = $(this.element).attr('title');
 					this.title = '<h4>' + this.title + '</h4>' 
 								 +'<p>' + $(this.element).parent().find('img').attr('alt') + '</p>' +
-								 '<a class="button button-mini" href="_include/flipbook/'+$(this.element).attr('id')+'" target="_blank">PUBLICACIÓN COMPLETA</a>';
+								 '<div align="right"><a class="button button-mini" href="_include/flipbook/'+$(this.element).attr('id')+'" target="_blank">PUBLICACIÓN COMPLETA</a></div>';
 				},
 				helpers : {
 					title : { type: 'inside' },
@@ -468,8 +475,8 @@ BRUSHED.map = function(){
     });
 
     var infowindow = new google.maps.InfoWindow();
-    var contentString = "<b>Sinergia Publicaciones</b><br />";
-    contentString += "####################<br /> ############# <br /> #################";
+    var contentString = "<b>Sinergia Publicaciones S.A.C.</b><br />";
+    contentString += "Calle Víctor Alzamora 396 Of. 103<br />Surquillo, Lima 34<br />Peru";
 
     infowindow.setContent(contentString);
     //infowindow.setPosition(myLatlng);

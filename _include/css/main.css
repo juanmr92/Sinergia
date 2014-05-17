@@ -1005,7 +1005,7 @@ nav#menu #menu-nav li a:hover {
 }
 
 #contact-form .submit {
-    background: #3C3F45;
+    background: #FFFFFF;
     color: #23262C;
     cursor: pointer;
     display: inline-block;
@@ -1425,3 +1425,18 @@ footer .credits {
        -o-transition: none;
           transition: none;
 }
+
+/* ScrollBar */
+::-webkit-scrollbar {  
+    width: 12px;  
+}  
+::-webkit-scrollbar-track {  
+    background-color: #eaeaea;  
+    border-left: 1px solid #ccc;  
+}  
+::-webkit-scrollbar-thumb {  
+    background-color: #ccc;  
+}  
+::-webkit-scrollbar-thumb:hover {  
+    background-color: #aaa;  
+}  
